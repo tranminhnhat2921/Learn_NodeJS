@@ -2,7 +2,8 @@
 import express from "express";
 import 'dotenv/config'
 import configViewEngine from "./configs/viewEngine";
-import initWebRoute from "./route/web.js"
+import initWebRoute from "./route/web.js";
+import connection from"./configs/connectDB.js";
 
 const app = express()
 const port = process.env.PORT || 8080;

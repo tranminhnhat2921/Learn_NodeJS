@@ -13,14 +13,3 @@ const connection = mysql.createConnection({
 });
 
 export default connection;
-
-/* simple query
-connection.query(
-  'SELECT * FROM `users`',
-  function(err, results, fields) {
-    let rows = results.map((row) => {
-        return row.user_id;
-    })
-    console.log(rows); // results contains rows returned by server
-  }
-);*/
